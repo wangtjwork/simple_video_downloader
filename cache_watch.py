@@ -8,7 +8,7 @@ path_to_watch = "/Users/<user-name>/AppData/Local/Google/Chrome/User Data/Defaul
 path_to_copy = "./orig/"
 
 # clear orig folder
-if not os.path.isdir(path_to_copy): os.path.mkdir(path_to_copy)
+if not os.path.isdir(path_to_copy): os.mkdir(path_to_copy)
 old_files = glob.glob(path_to_copy + "*")
 for old_file in old_files:
 	os.remove(old_file)

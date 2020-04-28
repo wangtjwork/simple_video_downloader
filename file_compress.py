@@ -23,7 +23,7 @@ files = list(filter(os.path.isfile, glob.glob(orig_path + "f_*")))
 files = [os.path.basename(f) for f in files]
 
 # clear dest folder
-if not os.path.isdir(dest_path): os.path.mkdir(dest_path)
+if not os.path.isdir(dest_path): os.mkdir(dest_path)
 old_files = glob.glob(dest_path + "*")
 for old_file in old_files:
 	os.remove(old_file)
